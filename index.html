@@ -19,6 +19,7 @@
       margin-top: 20px;
       font-size: 1.2em;
       color: green;
+      white-space: pre-wrap;
     }
     #rescan-button {
       display: none;
@@ -35,8 +36,8 @@
   <button id="rescan-button">Scan Another</button>
 
   <script>
-    const WEB_APP_URL = "https://qr-proxy.tdogacosta98.workers.dev/"; // <-- Replace with your Web App URL
-    const SPREADSHEET_ID = "1Sji7MWbmzF46Kz9Z6zfdOT15W1Djd8zwO2PdzHDBx8Y"; // <-- Replace with your Spreadsheet ID
+    const WEB_APP_URL = "https://qr-proxy.tdogacosta98.workers.dev/";
+    const SPREADSHEET_ID = "1Sji7MWbmzF46Kz9Z6zfdOT15W1Djd8zwO2PdzHDBx8Y";
 
     const resultElem = document.getElementById("result");
     const rescanButton = document.getElementById("rescan-button");
@@ -81,7 +82,6 @@
       startScanner();
     });
 
-    // Start scanning when page loads
     startScanner();
   </script>
 </body>
